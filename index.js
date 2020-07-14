@@ -150,7 +150,9 @@ const gameResults = choice => {
     }
 };
 
-console.log( gameResults( "scissor" ) );
+const choice = prompt("Enter rock, paper, or scissor")
+
+console.log( gameResults( choice ) );
 
   
 /************************************************************** Task 5 **************************************************************/
@@ -218,7 +220,28 @@ console.log( calculateGrade( 59 ) );
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+const vowelCounter = word => {
+    word = word.toLowerCase();
+    let counter = 0;
 
+    for( let i = 0; i < word.length; i++ ) {
+        if ( word[i].includes( "a" ) ) {
+            counter++;
+        } else if ( word[i].includes( "e" ) ) {
+            counter++;
+        } else if ( word[i].includes( "i" ) ) {
+            counter++;
+        } else if ( word[i].includes( "o" ) ) {
+            counter++;
+        } else if ( word[i].includes( "u" ) ) {
+            counter++;
+        }
+    };
+
+    return counter;
+};
+
+console.log( vowelCounter( "aeiou" ) );
 
 
 
@@ -226,7 +249,7 @@ console.log( calculateGrade( 59 ) );
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
-
+// Edited old code to include this
 
 
 
